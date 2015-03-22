@@ -19,4 +19,4 @@ api.add_resource(HelloWorld,'/')
 api.add_resource(corra, '/corr/api/v1/<string:s1>/<string:s2>')
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8080, debug=True)
+	app.run(host='0.0.0.0', port=8181, debug=True)
