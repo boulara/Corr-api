@@ -2,8 +2,7 @@ from flask import Flask, jsonify
 from flask.ext import restful
 from corr import *
 
-if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=80, debug=True)
+
 	
 
 app = Flask(__name__)
@@ -22,3 +21,5 @@ class corra(restful.Resource):
 api.add_resource(HelloWorld,'/')
 api.add_resource(corra, '/corr/api/v1/<string:s1>/<string:s2>')
 
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=80, debug=True)
